@@ -1,7 +1,6 @@
 from rest_framework import routers
 
-from user.serializers import PermissionViewSet, ContentTypeViewSet, GroupViewSet
-from user.views import UserViewSet
+from user.views import UserViewSet, PermissionViewSet, ContentTypeViewSet, GroupViewSet, ResetPasswordAPIView
 
 sd_router = routers.DefaultRouter()
 sd_router.register(r"users", UserViewSet)
